@@ -1,0 +1,17 @@
+#
+# This file is part of LiteHelloWorld.
+#
+# CONFIGURATION FILE EXAMPLE - USED IN STANDALONE MODE / FOR TESTS
+# FPGA TARGET ----------------------------------------------------------------------
+vendor:     lattice
+device:     LFE5UM5G-85F-8BG554I
+toolchain:  trellis
+board:      ecpix5
+# Core ---------------------------------------------------------------------
+clk_freq:   100e6
+clk_sim:    1e6
+core:       wishbone
+endianness: big
+soc:
+    mem_map:
+        dummyphy:  0x50000000
